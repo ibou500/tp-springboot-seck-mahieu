@@ -1,0 +1,34 @@
+<h2>Details Medecin</h2> 
+
+<hr/>
+<div *ngIf="medecin">
+  <div>
+    <label><b>id: </b></label> {{medecin.id_medecin}}
+  </div>
+  <div>
+  <div>
+    <label><b>nom: </b></label> {{medecin.nom}}
+  </div>
+  <div>
+    <label><b>prenom: </b></label> {{medecin.prenom}}
+  </div>
+  <div>
+    <label><b>jour: </b></label> {{medecin.date}} 
+  </div>  
+  <div>
+    <label><b>Spécialité: </b></label> {{medecin.specialite}}
+  </div>
+  <div>
+    <label><b>adresse: </b></label> {{medecin.adresse}}
+  </div>
+  <div>
+    <label><b>Téléphone: </b></label> {{medecin.tel}}
+  </div>
+  <div>
+    <label><b>e-mail: </b></label> {{medecin.mail}}
+  </div>
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to Customer List</button><br>

@@ -1,0 +1,10 @@
+<div class="d-flex flex-xl-row-reverse justify-content-around bd-highlight">
+  <div *ngFor="let historique of historiques | async">
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <p class="card-text"> {{historique.description}}</p>
+        <h5 class="card-title">{{historique.jour}}</h5>
+      </div>
+    </div>
+  </div>
+</div>

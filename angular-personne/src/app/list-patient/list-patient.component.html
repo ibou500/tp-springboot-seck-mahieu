@@ -1,0 +1,29 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h2>Customer List</h2>
+  </div>
+  <div class="panel-body">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>NOM</th>
+          <th>PRENOM</th>
+          <th>Date de naissance</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let customer of customers | async">
+          <td>{{customer.nom}}</td>
+          <td>{{customer.prenom}}</td>
+          <td>{{customer.jour}}/{{customer.mois}}/{{customer.annee}}</td>
+          <td><button (click)="deleteCustomer(customer.id)" class="btn btn-danger">Delete</button>
+              <button (click)="customerDetails(customer.id)" class="btn btn-info" style="margin-left: 10px">Details</button>
+              <button (click)="updateCustomer(customer.id)" class="btn btn-primary" style="margin-left: 10px">Update</button>
+              <button (click)="historique(customer.id)" class="btn btn-secondary" style="margin-left: 10px">historique</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

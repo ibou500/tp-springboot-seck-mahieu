@@ -1,0 +1,33 @@
+<h2>Employee Details</h2> 
+
+<hr/>
+<div *ngIf="customer">
+  <div>
+    <label><b>Id: </b></label> {{customer.id}}
+  </div>
+  <div>
+    <label><b>nom: </b></label> {{customer.nom}}
+  </div>
+  <div>
+    <label><b>prenom: </b></label> {{customer.prenom}}
+  </div>
+  <div>
+    <label><b>jour: </b></label> {{customer.jour}} / {{customer.mois}} / {{customer.annee}}
+  </div>  
+  <div>
+    <label><b>Sécurité sociale: </b></label> {{customer.nss}}
+  </div>
+  <div>
+    <label><b>adresse: </b></label> {{customer.adresse}}
+  </div>
+  <div>
+    <label><b>Téléphone: </b></label> {{customer.tel}}
+  </div>
+  <div>
+    <label><b>e-mail: </b></label> {{customer.mail}}
+  </div>
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to Customer List</button><br>

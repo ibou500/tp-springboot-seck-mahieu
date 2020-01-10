@@ -1,0 +1,18 @@
+<h3>Create Customer</h3>
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="login()">
+    <div class="form-group">
+      <label for="name">nom</label>
+      <input type="text" class="form-control" placeholder="seck" id="firstName" required [(ngModel)]="connexion.nom" name="nom">
+    </div>
+
+    <div class="form-group">
+      <label for="name">prenom</label>
+      <input type="text" class="form-control" placeholder="ibrahima" id="lastName" required [(ngModel)]="connexion.prenom" name="prenom">
+    </div>
+
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
+

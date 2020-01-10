@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+        <a routerLink="customers" class="nav-link" routerLinkActive="active">Liste des Patients</a>
+    </li>
+    <li class="nav-item">
+        <a routerLink="medecins" class="nav-link" routerLinkActive="active">Liste des Medecins</a>
+    </li>
+    <li class="nav-item">
+        <a routerLink="add" class="nav-link" routerLinkActive="active">Ajouter Patient</a>
+    </li>
+    <li class="nav-item">
+        <a routerLink="addmedecin" class="nav-link" routerLinkActive="active">Ajouter Medecin</a>
+    </li>
+     <li class="nav-item">
+        <a routerLink="historiques" class="nav-link" routerLinkActive="active">Historique</a>
+    </li>
+    <li class="nav-item">
+        <a routerLink="addhistorique" class="nav-link" routerLinkActive="active">Ajouter un historique</a>
+    </li>
+  </ul>
+</nav>
+<div class="container">
+  <br>
+  <h2 style="text-align: center;">{{title}}</h2>
+  <hr>  
+  <div class="card">
+    <div class="card-body">
+  <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+      <span>All Rights Reserved 2019 @Ibrahima-Daniel</span>
+  </div>
+</footer>
